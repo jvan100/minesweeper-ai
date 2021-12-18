@@ -11,8 +11,16 @@
     <name>minesweeper-ai</name>
     <url>https://github.com/jvan100/minesweeper-ai</url>
 
-    <dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -22,8 +30,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>16</source>
-                    <target>16</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -33,7 +41,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.jvan100.Main</mainClass>
+                            <mainClass>org.jvan100.WebHandler</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
